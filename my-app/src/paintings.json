@@ -1,0 +1,46 @@
+[
+  {
+    "id": "id-1",
+    "url": "https://cdn.pixabay.com/photo/2018/09/27/15/18/background-3707283_1280.jpg",
+    "title": "Crystal. Art abstract",
+    "price": 500,
+    "author": {
+      "tag": "bubleruble",
+      "url": "https://pixabay.com/users/ractapopulous-24766/"
+    },
+    "quantity": 10
+  },
+  {
+    "id": "id-2",
+    "url": "https://cdn.pixabay.com/photo/2018/10/22/17/13/background-3765811_960_720.jpg",
+    "title": "Dreamy Forest Path",
+    "price": 650,
+    "author": {
+      "tag": "forestlover88",
+      "url": "https://pixabay.com/users/forestlover88-3912334/"
+    },
+    "quantity": 3
+  },
+  {
+    "id": "id-3",
+    "url": "https://cdn.pixabay.com/photo/2018/09/20/13/18/background-3690805_1280.jpg",
+    "title": "Misty Mountain View",
+    "price": 720,
+    "author": {
+      "tag": "skywalker42",
+      "url": "https://pixabay.com/users/skywalker42-1441183/"
+    },
+    "quantity": 8
+  },
+  {
+    "id": "id-4",
+    "url": "https://cdn.pixabay.com/photo/2018/09/15/08/34/hot-air-balloon-3678905_960_720.jpg",
+    "title": "Wild Horse at Dusk",
+    "price": 550,
+    "author": {
+      "tag": "natureisart",
+      "url": "https://pixabay.com/users/natureisart-9823425/"
+    },
+    "quantity": 0
+  }
+]
