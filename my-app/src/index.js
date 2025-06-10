@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App'
 import paintings from './paintings.json';
@@ -31,6 +32,11 @@ import paintings from './paintings.json';
 // }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // const painting = paintings[1];
 
@@ -42,27 +48,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //     price={painting.price}
 //   />
 
-root.render(<App />);
 
 
 
-
-
-// ========================================================
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
