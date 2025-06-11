@@ -1,31 +1,37 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import defaultImage from './default-image.webp';
 
-export default function Painting({
+ function Painting({
   imageUrl = defaultImage,
   title,
-  authorName = 'John Doe',
+  author = 'John Doe',
   profileUrl,
   price,
+  quantity,
 }) {
   return (
     <div>
       <img src={imageUrl} alt={title} width="480" />
       <h2>{title}</h2>
       <p>
-        Автор:<a href={profileUrl}>{authorName}</a>
+        Автор:<a href={profileUrl}>{author}</a>
       </p>
       <p>Ціна: {price} кредитів</p>
-      <p>Доступність: закінчується чи є у наявності</p>
+      <p>Доступність: { quantity < 10 ? 'закінчується' : 'є у наявності'} </p>
       <button type="button">Додати в кошик</button>
     </div>
   );
 }
 
 Painting.propTypes = {
-  imageUrl: PropTypes.string,
-  title: PropTypes.string,
-  authorName: PropTypes.string,
-  profileUrl: PropTypes.string,
-  price: PropTypes.string,
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  profileUrl: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  quantity:PropTypes.number.isRequired,
 };
+
+
+export default Painting;
+
